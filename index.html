@@ -9,29 +9,29 @@
   <script src="src/index.js"></script>
 
   <body>
-    <header class="__header">
+    <header>
       <h1>Calculator</h1>
     </header>
     <main>
       <div>
-        <div>Num1 <input id="num1" type="text" /></div>
-        <div>Num2 <input id="num2" type="text" /></div>
-        <div>Result <input type="text" /></div>
+        <div>Number One <input type="number" id="num1" type="text" /></div>
+        <div>Number Two <input type="number" id="num2" type="text" /></div>
+        <div>Result <input id="input-result" type="number" /></div>
       </div>
-      <div>
+      <div class="__operation_list">
         <input type="radio" name="operation" value="suma" id="operation-1" />
         <label for="operation-1">Suma</label>
-        <input type="radio" value="resta" name="operation" id="operation-1" />
-        <label for="operation-1">Resta</label>
+        <input type="radio" value="resta" name="operation" id="operation-2" />
+        <label for="operation-2">Resta</label>
         <input
           type="radio"
           value="multiplica"
           name="operation"
-          id="operation-1"
+          id="operation-3"
         />
-        <label for="operation-1">Miltiplica</label>
-        <input type="radio" value="divide" name="operation" id="operation-1" />
-        <label for="operation-1">Divide</label>
+        <label for="operation-3">Miltiplica</label>
+        <input type="radio" value="divide" name="operation" id="operation-4" />
+        <label for="operation-4">Divide</label>
       </div>
     </main>
     <button id="calculate-button">Calculate</button>
